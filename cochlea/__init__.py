@@ -147,7 +147,7 @@ _greenwood_pars  = {
 
 
 def greenwood(x, species=None, A=None, a=None, k=None):
-    f'''Greenwood function.
+    r'''Greenwood function.
 
     Calculates the corresponding center frequency for a place on the
     basilar membrane.
