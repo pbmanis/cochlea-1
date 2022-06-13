@@ -153,7 +153,7 @@ def greenwood(x, species=None, A=None, a=None, k=None):
     basilar membrane.
     Center frequency and place on the basilar membrane can be
     connected by using the Greenwood equation [1].
-    .. math:: cf = A(10^{x \cdot a) - k)
+    .. math:: cf = A(10^{x \\cdot a) - k)
     where cf is the center frequency in Hz and x the place on the
     basilar membrane given from apex to base (apex = 0). The parameter
     A has the unit Hz, a has a unit of 1/m and k is unit less.
