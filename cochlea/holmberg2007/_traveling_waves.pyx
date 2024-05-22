@@ -598,7 +598,7 @@ def run_ihc_meddis2000(
     ICa = gmax_ca * act_Ca_inf**3 * (uIHC_rest - e_ca)
 
     if -ICa > perm_ca0:
-        k0 = perm_z * ((-ICa)**power_ca - perm_ca0**power_ca)
+        k0 = perm_z * (np.power((-ICa), power_ca) - np.power(perm_ca0, power_ca))
     else:
         k0 = 0.0
 
@@ -642,7 +642,7 @@ def run_ihc_meddis2000(
 
         ### power law release function
         if conc_Ca > perm_ca0:
-            kdt = (perm_z*dt * (conc_Ca**power_ca - perm_ca0**power_ca))
+            kdt = (perm_z*dt * (np.power(conc_Ca, power_ca) - np.power(perm_ca0, power_ca)))
         else:
             kdt = 0.0
 
